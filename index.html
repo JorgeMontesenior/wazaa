@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montes David</title>
+    <style>
+    .body {
+        background-color: rebeccapurple;
+        text-align: center;
+    }
+
+    .body__title {
+        color:rgb(187, 232, 7);
+    }
+    .body__img {
+      width: 100%; 
+      max-width: 512px;
+      border-radius: 50%; 
+    }
+    </style>
+</head>
+<body>
+    Hecho por Jorge Montes para ti 😁
+</body>
+<body class="body"> 
+  <h1 class="body__title">¿Puedo ser tu novio?</h1>  
+  <img 
+       src="https://www.shutterstock.com/image-photo/dog-holds-bouquet-roses-his-260nw-2027530271.jpg" 
+       alt="YO jaja" class="body__img" />
+       <br>
+       <button id="yes">❤️Pero por supuesto que SÍ</button>
+       <button id="no">😭NOOOOOO</button>
+
+       <script>
+        const vutonSi = document.getElementById('yes');
+        const vutonNo = document.getElementById('no');
+
+        const zomosNobios = () => {
+            alert('Sabía que dirías que síiii😁💕');
+            alert('Te quiero mucho mocosa renegona❤️')
+            location.href = 'https://www.youtube.com/watch?v=A9WHpDefTsw&t=46s';
+        };
+
+        const ebitaroto = () => {
+        vutonNo.style.position = 'absolute';
+        vutonNo.style.top = (Math.random() * window.innerHeight + 'px');
+        vutonNo.style.left = (Math.random() * window.innerWidth + 'px');
+        };
+
+        vutonSi.addEventListener('click', zomosNobios);
+        vutonNo.addEventListener('mouseover', ebitaroto);
+       </script>
+</body>
+</html>
